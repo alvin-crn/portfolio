@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  font-family: "Encode Sans Condensed", sans-serif;
+  background-color: #f9f9f9;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: currentColor;
+  transition: 0.2s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Navbar global */
+#main-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255 255 255 / .8);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  backdrop-filter: blur(16px);
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Logo centré */
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 10;
+}
+
+/* Burger à gauche */
+.nav-toggle {
+  position: absolute;
+  left: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* Menu overlay */
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  transition: left 0.3s;
+  padding: 0;
+}
+
+.nav-links.show {
+  left: 0;
+}
+
+.nav-links a,
+.nav-links p {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Dropdown menu */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0;
+  
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+.dropdown.open .dropdown-menu {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.dropdown-menu a {
+  font-size: 1.5rem;
+}
