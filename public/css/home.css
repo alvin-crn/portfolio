@@ -22,6 +22,7 @@
 
 .about-text h1 {
   font-size: 3rem;
+  font-weight: normal;
 }
 
 .about-text h1 span {
@@ -75,6 +76,11 @@
   box-shadow: 0 12px 30px rgba(79, 70, 229, 0.45);
 }
 
+.about-text .about-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.3);
+}
+
 .about-photo img {
   width: 220px;
   height: 220px;
@@ -106,7 +112,6 @@
 /* ======== Projects Carousel Styles ======== */
 #projects-carousel {
   height: calc(100vh - 60px);
-  margin-top: 60px;
   overflow: hidden;
 }
 
