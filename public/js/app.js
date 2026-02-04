@@ -2,6 +2,7 @@ $(function () {
     // Toggle menu full screen
     $('.nav-toggle').on('click', function () {
         $('.nav-links').toggleClass('show');
+        $('body').toggleClass('menu-open');
     });
 
     // Dropdown projets
@@ -13,5 +14,6 @@ $(function () {
     $('.nav-links a').on('click', function () {
         $('.nav-links').removeClass('show');
         $('.dropdown').removeClass('open');
+        $('body').removeClass('menu-open');
     });
 });

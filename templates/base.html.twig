@@ -23,17 +23,23 @@
 
             <ul class="nav-links">
                 <li class="dropdown">
-                    <p class="dropdown-toggle">Projects</p>
+                    <p class="dropdown-toggle menu-links">Projets</p>
                     <ul class="dropdown-menu">
-                        <li><a href="/projects/listen-my-mood">Listen My Mood</a></li>
-                        <li><a href="/projects/brodart">BrodArt</a></li>
+                        <li><a href="{{ path('project_show', {project: 'brodart'}) }}">BrodArt</a></li>
+                        <li><a href="{{ path('project_show', {project: 'listen-my-mood'}) }}">Listen My Mood</a></li>
+                        <li><a href="{{ path('project_show', {project: 'pegasus'}) }}">Pegasus</a></li>
+                        <li><a href="{{ path('project_show', {project: 'hera'}) }}">Hera</a></li>
+                        <li><a href="{{ path('project_show', {project: 'homecredit'}) }}">HomeCredit</a></li>
+                        <li><a href="{{ path('project_show', {project: 'watchcorn'}) }}">WatchCorn</a></li>
+                        <li><a href="{{ path('project_show', {project: 'coming-soon'}) }}">Eventure</a></li>
+                        <li><a href="{{ path('project_show', {project: 'coming-soon'}) }}">RetroScore</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">À propos de moi</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experience">Experiences professionnelles</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#contact">Me contacter</a></li>
+                <li><a class="menu-links" href="/#about">À propos de moi</a></li>
+                <li><a class="menu-links" href="/#skills">Compétences</a></li>
+                <li><a class="menu-links" href="/#experience">Experiences professionnelles</a></li>
+                <li><a class="menu-links" href="/#education">Formation</a></li>
+                <li><a class="menu-links" href="/#contact">Me contacter</a></li>
             </ul>
         </div>
     </nav>

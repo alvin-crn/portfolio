@@ -105,16 +105,39 @@ strong {
   left: 0;
 }
 
-.nav-links a,
-.nav-links p {
+.nav-links .menu-links {
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 100;
   transition: color 0.2s;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 
-.nav-links a:hover {
-  color: #38bdf8;
+.nav-links .menu-links::after,
+.nav-links .menu-links::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.nav-links .menu-links::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.nav-links .menu-links:hover::after,
+.nav-links .menu-links:hover::before {
+  transform: scaleX(1);
 }
 
 /* Dropdown menu */
@@ -122,36 +145,68 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0;
+  transition: all 0.4s ease;
 }
 
 .dropdown-menu {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
-  margin-top: 0;
-  
+  justify-content: center;
+  row-gap: 1rem;
+  column-gap: 2rem;
   max-height: 0;
+  max-width: 80%;
   opacity: 0;
-  overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+.dropdown.open {
+  gap: 1rem;
 }
 
 .dropdown.open .dropdown-menu {
   max-height: 500px;
   opacity: 1;
-  margin-top: 1rem;
 }
 
 .dropdown-menu a {
+  display: inline-block;
   font-size: 1.5rem;
+  font-weight: 100;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: #6b7280;
+  transform: translateY(-3px);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1.2rem !important;
+  }
+
+  .nav-links .menu-links {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 1.2rem;
+  }
 }
 
 .footer {
-    padding: 20px 10%;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #6b7280;
-    background: #f9f9f9;
-    border-top: 1px solid #e5e7eb;
+  padding: 20px 10%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  background: #f9f9f9;
+  border-top: 1px solid #e5e7eb;
 }
