@@ -379,9 +379,88 @@
         </div>
     </div>
 </section>
+
+<section id="education" class="education-section">
+    <div class="education-container">
+
+        <h2 class="section-title">Formation</h2>
+
+        <div class="education-list">
+
+            <div class="education-card">
+                <div class="education-header">
+                    <img src="{{ asset('media/3il-ingenieurs.png') }}" alt="3iL Ingenieurs" class="education-logo">
+                    <div class="education-info">
+                        <h3>Bac+5 Manager de Solutions Digitales et Data</h3>
+                        <p class="school">3iL Ingénieurs</p>
+                        <p class="date">2023 – 2025</p>
+                    </div>
+                    <button class="education-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="education-detail">
+                    <p class="mention"><i class="fa-solid fa-medal"></i> Mention : Bien</p>
+                    <p><a href="https://www.3il-ingenieurs.fr/" target="_blank" rel="noopener">Visiter le site de
+                            l'école</a>
+                    </p>
+                    <p class="description">Formation orientée gestion de projets digitaux et data, incluant l’analyse des besoins, la
+                        rédaction de cahiers des charges et le pilotage de solutions informatiques avec acquisition
+                        solides de compétences techniques en développement (Java, frameworks web, IOT, Flutter) et en
+                        méthodologies de gestion de projet (UML, planification, analyse des risques).</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-header">
+                    <img src="{{ asset('media/imie-paris.png') }}" alt="Imie-Paris" class="education-logo">
+                    <div class="education-info">
+                        <h3>Bac+3 Concepteur Développeur d'Applications</h3>
+                        <p class="school">Imie Paris</p>
+                        <p class="date">2022 – 2023</p>
+                    </div>
+                    <button class="education-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="education-detail">
+                    <p><a href="https://www.imie-paris.fr/" target="_blank" rel="noopener">Visiter le site de
+                            l'école</a></p>
+                    <p class="description">Formation visant l'approfondissement des bases en programmation, bases de
+                        données, systèmes et méthodes logicielles avec une acquisition de compétences
+                        opérationnelles pour la réalisation de projets web, desktop et mobiles en autonomie ou
+                        en équipe.</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-header">
+                    <img src="{{ asset('media/afpa.jpg') }}" alt="AFPA" class="education-logo">
+                    <div class="education-info">
+                        <h3>Bac+2 Développeur web et web mobile</h3>
+                        <p class="school">AFPA</p>
+                        <p class="date">2021 – 2022</p>
+                    </div>
+                    <button class="education-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="education-detail">
+                    <p><a href="https://www.afpa.fr/" target="_blank" rel="noopener">Visiter le site de
+                            l'école</a></p>
+                    <p class="description">Formation axée sur le développement d’applications web et web mobiles avec un
+                        acquisition de compétences en front-end, back-end, bases de données et intégration
+                        de solutions e-commerce.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 {% endblock %}
 
 {% block js %}
 <script src="{{ asset('js/carrousel.js') }}"></script>
 <script src="{{ asset('js/experience.js') }}"></script>
+<script src="{{ asset('js/education.js') }}"></script>
 {% endblock js %}
