@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+Alvin Carneiro - WatchCorn
+{% endblock title %}
+
+{% block body %}
+<!-- HERO -->
+<section class="project-hero coming-soon">
+    <img src="{{ asset('media/carrousel/watchcorn-cover.jpg') }}" alt="WatchCorn">
+
+    <div class="project-hero-content">
+        <h1>WatchCorn</h1>
+
+        <p class="project-subtitle">
+            Application web et plateforme sociale dédiée au suivi de films et séries TV.
+        </p>
+
+        <div class="project-cta">
+            <a href="" target="_blank" rel="noopener" class="btn-primary">
+                Voir le site (coming soon)
+            </a>
+            <a href="https://github.com/alvin-crn/WatchCorn" target="_blank" rel="noopener" class="btn-secondary">
+                Suivre en direct le développement
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Concept</h2>
+
+    <p>
+        WatchCorn est un projet personnel visant à créer une application moderne
+        de suivi de films et séries TV, combinant gestion de watchlist,
+        découverte de contenus et interactions sociales.
+    </p>
+
+    <p>
+        L’objectif est de proposer une expérience fluide et intuitive,
+        inspirée des plateformes de tracking existantes, tout en mettant
+        l’accent sur la performance, la sécurité et l’architecture moderne.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Objectifs du projet</h2>
+
+    <ul>
+        <li>Créer une application full stack moderne et scalable</li>
+        <li>Mettre en place une authentification sécurisée via JWT</li>
+        <li>Consommer une API externe riche en données (TMDb)</li>
+        <li>Développer une interface front dynamique avec Angular</li>
+        <li>Structurer une architecture propre et maintenable</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique envisagée</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-symfony"></i> Symfony 8</span>
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-brands fa-angular"></i> Angular 21</span>
+        <span><i class="fa-solid fa-shield-halved"></i> JWT</span>
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <span><i class="fa-solid fa-database"></i> API TMDb</span>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Fonctionnalités prévues</h2>
+
+    <ul>
+        <li>Création et gestion de watchlists personnalisées</li>
+        <li>Suivi de l’avancement des films et séries</li>
+        <li>Recherche et découverte de contenus via l’API TMDb</li>
+        <li>Système de comptes utilisateurs sécurisé</li>
+        <li>Interactions sociales (suivre ses amis, section commentaire, partage...)</li>
+    </ul>
+</section>
+
+<section class="project-section highlight">
+    <h2>Roadmap prévisionnelle</h2>
+
+    <ul>
+        <li>Conception de l’architecture et du modèle de données</li>
+        <li>Mise en place de l’API backend Symfony</li>
+        <li>Implémentation de l’authentification JWT</li>
+        <li>Développement du front Angular</li>
+        <li>Améliorations UX et fonctionnalités sociales</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Pourquoi ce projet ?</h2>
+
+    <p>
+        WatchCorn est conçu comme un projet long terme,
+        me permettant d’approfondir mes compétences en architecture full stack,
+        en sécurité, et en développement front moderne avec Angular,
+        tout en travaillant sur un produit orienté utilisateur.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Aperçu</h2>
+
+    <div class="project-gallery">
+        <p>À venir...</p>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

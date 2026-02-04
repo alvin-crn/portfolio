@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+Alvin Carneiro - Hera
+{% endblock title %}
+
+{% block body %}
+<section class="project-hero">
+    <img src="{{ asset('media/carrousel/hera-cover.jpg') }}" alt="Hera">
+
+    <div class="project-hero-content">
+        <h1>Hera</h1>
+
+        <p class="project-subtitle">
+            Outil interne d’extraction, de transformation et d’export de données
+            via API GraphQL, destiné à automatiser la génération de fichiers CSV
+            exploitables par des outils métiers.
+        </p>
+
+        <div class="project-cta">
+            <span class="btn-disabled">
+                Projet interne – non hebergé publiquement
+            </span>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Contexte du projet</h2>
+
+    <p>
+        Hera a été développé pour répondre à un besoin d’automatisation
+        dans le traitement de données issues de la plateforme
+        <strong>Démarches Simplifiées</strong> permettant la frabrication des cartes famille militaire SNCF.
+        Les données, exposées via une API GraphQL, devaient être récupérées,
+        transformées et mises à disposition sous forme de fichiers CSV
+        compatibles avec des outils de traitement internes.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Objectifs</h2>
+
+    <ul>
+        <li>Interroger une API GraphQL complexe</li>
+        <li>Extraire et normaliser des données structurées</li>
+        <li>Transformer les données selon des règles métiers</li>
+        <li>Générer automatiquement des fichiers CSV exploitables</li>
+        <li>Réduire les tâches manuelles et les risques d’erreurs</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-solid fa-database"></i> GraphQL</span>
+        <span><i class="fa-solid fa-file-csv"></i> CSV</span>
+        <span><i class="fa-brands fa-js"></i> JQuery</span>
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+    </div>
+</section>
+
+<section class="project-section highlight">
+    <h2>Mon rôle</h2>
+
+    <ul>
+        <li>Analyse du schéma GraphQL et des données disponibles</li>
+        <li>Conception de la logique d’extraction et de transformation</li>
+        <li>Développement de scripts PHP pour l’interrogation de l’API</li>
+        <li>Génération dynamique de fichiers CSV</li>
+        <li>Gestion des erreurs et des cas limites liés aux données</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Fonctionnalités principales</h2>
+
+    <ul>
+        <li>Connexion sécurisée à une API GraphQL</li>
+        <li>Requêtes dynamiques selon les besoins métiers</li>
+        <li>Transformation des données brutes en données exploitables</li>
+        <li>Export automatique au format CSV</li>
+        <li>Compatibilité avec des outils de traitement internes</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Enjeux techniques</h2>
+
+    <ul>
+        <li>Compréhension et exploitation d’une API GraphQL complexe</li>
+        <li>Gestion de volumes de données variables</li>
+        <li>Fiabilité des exports générés</li>
+        <li>Maintenabilité du code face à l’évolution du schéma GraphQL</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Ce que m’a apporté ce projet</h2>
+
+    <p>
+        Hera m’a permis de renforcer mes compétences en manipulation de données,
+        en consommation d’API GraphQL et en transformation de flux de données.
+        Ce projet m’a confronté à des problématiques proches du
+        <strong>data engineering</strong> et m’a appris à concevoir des outils
+        robustes, orientés automatisation et fiabilité. Cela m'a aussi appris à
+        communiquer efficacement avec des équipes métiers pour comprendre leurs besoins
+        et adapter les solutions techniques en conséquence.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Aperçu</h2>
+
+    <div class="project-gallery">
+        <p>Pour des questions de confidentialité, les captures d'écran du projet ne sont pas disponibles publiquement.
+        </p>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/comingsoon.css') }}">
+{% endblock %}
+{% block title %}
+    Alvin Carneiro - Coming Soon
+{% endblock title %}
+
+{% block body %}
+    <div class="coming-soon-container">
+        <h1 class="coming-soon-title">Un peu de patience <i class="fa-solid fa-hourglass-half"></i></h1>
+        <p class="coming-soon-message">Je travaille actuellement sur WatchCorn, jetez y un œil !</p>
+        <a href="{{ path('project_show', { 'project': 'WatchCorn' }) }}" class="btn-primary">Voir WatchCorn</a>
+    </div>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

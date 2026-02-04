@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+Alvin Carneiro - Pegasus
+{% endblock title %}
+
+{% block body %}
+<section class="project-hero">
+    <img src="{{ asset('media/carrousel/pegasus-cover.jpg') }}" alt="Pegasus">
+
+    <div class="project-hero-content">
+        <h1>Pegasus</h1>
+
+        <p class="project-subtitle">
+            Application interne développée pour le Ministère des Armées,
+            dédiée à la gestion et à la génération automatisée de bons de commande
+            dans un contexte logistique et administratif complexe.
+        </p>
+
+        <div class="project-cta">
+            <span class="btn-disabled">
+                Projet interne – non hebergé publiquement
+            </span>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Contexte du projet</h2>
+
+    <p>
+        Pegasus est une application métier interne conçue pour répondre aux besoins
+        de gestion de fret inter-armée et des bons de commande au sein du Ministère des Armées.
+        Le projet s’inscrit dans un environnement à fortes contraintes réglementaires,
+        avec des processus existants majoritairement manuels et hétérogènes voir ancien nécessitant une refonte complète.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Objectifs</h2>
+
+    <ul>
+        <li>Proposer une solution plus moderne , rapide et pérenne</li>
+        <li>Centraliser la gestion des bons de commande et incidents internes</li>
+        <li>Automatiser la génération de documents administratifs</li>
+        <li>Automatiser la générattion des bons de commande</li>
+        <li>Réduire les erreurs liées aux saisies manuelles</li>
+        <li>Améliorer la traçabilité et la fiabilité des données</li>
+        <li>Optimiser les délais de traitement</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-symfony"></i> Symfony 6</span>
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-brands fa-js"></i> JQuery</span>
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-symfony"></i> Twig</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        <span><i class="fa-regular fa-file-code"></i> Macros VBA</span>
+        <span><i class="fa-regular fa-file-excel"></i> Excel</span>
+    </div>
+</section>
+
+<section class="project-section highlight">
+    <h2>Mon rôle</h2>
+
+    <ul>
+        <li>Analyse des besoins métiers en lien avec les utilisateurs finaux</li>
+        <li>Conception et développement full-stack de l’application multicouche</li>
+        <li>Développement des interfaces utilisateurs avec Twig</li>
+        <li>Automatisation de la génération des bons de commande</li>
+        <li>Interfaçage avec des outils bureautiques existants (Excel, VBA)</li>
+        <li>Intégration de la logique métier dans une architecture modulaire</li>
+        <li>Conception d'une interface utilisateur intuitive et ergonomique</li>
+        <li>Conception d'un dashboard administratif pour gérer les commandes et tickets incidents</li>
+        <li>Maintenance évolutive et corrective</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Ce que m’a apporté ce projet</h2>
+
+    <p>
+        Pegasus m’a permis de développer une forte compréhension des enjeux
+        liés aux applications métiers critiques : analyse fonctionnelle,
+        fiabilité des traitements, automatisation de processus complexes
+        et collaboration étroite avec des profils non techniques.
+        Ce projet a renforcé ma capacité à concevoir des solutions pragmatiques
+        adaptées à des contextes institutionnels exigeants mais aussi la conception d'application multicouche complexe.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Aperçu</h2>
+
+    <div class="project-gallery">
+        <p>Pour des questions de confidentialité, les captures d'écran du projet ne sont pas disponibles publiquement.</p>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

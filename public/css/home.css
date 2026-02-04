@@ -76,7 +76,6 @@
 .about-text .about-cta:hover {
   transform: translateY(-3px);
   background: #4338ca;
-  /* un poil plus foncé */
   box-shadow: 0 12px 30px rgba(79, 70, 229, 0.45);
 }
 

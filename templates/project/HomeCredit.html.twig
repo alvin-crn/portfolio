@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+    Alvin Carneiro - HomeCredit
+{% endblock title %}
+
+{% block body %}
+<section class="project-hero">
+    <img src="{{ asset('media/carrousel/homecredit-cover.jpg') }}" alt="HomeCredit">
+
+    <div class="project-hero-content">
+        <h1>HomeCredit</h1>
+
+        <p class="project-subtitle">
+            Application web back-office de scoring basée sur le Machine Learning,
+            destinée à l’évaluation du risque d’emprunts bancaires.
+        </p>
+
+        <div class="project-cta">
+            <span class="btn-disabled">
+                Projet académique / démonstrateur
+            </span>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Contexte du projet</h2>
+
+    <p>
+        HomeCredit est un projet orienté data et intelligence artificielle,
+        visant à prédire la probabilité de remboursement d’un emprunt bancaire.
+        L’objectif était de concevoir une application back-office capable
+        d’exploiter des données volumineuses et hétérogènes pour aider
+        à la prise de décision.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Objectifs</h2>
+
+    <ul>
+        <li>Analyser des jeux de données complexes et volumineux</li>
+        <li>Mettre en place un modèle de Machine Learning de scoring</li>
+        <li>Restituer les résultats via une interface web claire</li>
+        <li>Faciliter l’interprétation des scores par les utilisateurs métiers</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+        <span><i class="fa-solid fa-database"></i> MongoDB</span>
+        <span><i class="fa-solid fa-brain"></i> Machine Learning</span>
+        <span><i class="fa-solid fa-database"></i> Big Data</span>
+    </div>
+</section>
+
+<section class="project-section highlight">
+    <h2>Mon rôle</h2>
+
+    <ul>
+        <li>Analyse exploratoire des données (EDA)</li>
+        <li>Préparation et nettoyage des jeux de données</li>
+        <li>Entraînement et évaluation de modèles de Machine Learning</li>
+        <li>Développement de l’API et du back-office avec Flask</li>
+        <li>Stockage et exploitation des données dans MongoDB</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Fonctionnalités principales</h2>
+
+    <ul>
+        <li>Calcul automatique d’un score de risque</li>
+        <li>Visualisation des résultats dans une interface back-office</li>
+        <li>Consultation des données emprunteurs</li>
+        <li>Exploitation de données volumineuses</li>
+        <li>Support à la prise de décision</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Enjeux techniques</h2>
+
+    <ul>
+        <li>Gestion de jeux de données volumineux (Big Data)</li>
+        <li>Choix et évaluation des modèles de Machine Learning</li>
+        <li>Performance et fiabilité des prédictions</li>
+        <li>Compréhension et interprétabilité des scores</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Ce que m’a apporté ce projet</h2>
+
+    <p>
+        HomeCredit m’a permis de consolider mes compétences en data,
+        en Machine Learning et en conception d’applications orientées décision.
+        Ce projet m’a appris à faire le lien entre modèles statistiques,
+        données massives et besoins métiers concrets.
+    </p>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

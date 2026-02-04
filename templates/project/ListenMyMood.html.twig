@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+    Alvin Carneiro - Listen My Mood
+{% endblock title %}
+
+{% block body %}
+
+<section class="project-hero">
+    <img src="{{ asset('media/carrousel/listenmymood-cover.jpg') }}" alt="Listen My Mood">
+
+    <div class="project-hero-content">
+        <h1>Listen My Mood</h1>
+
+        <p class="project-subtitle">
+            Application web de recommandation musicale basée sur l’humeur de l’utilisateur,
+            s’appuyant sur l’API Spotify pour générer des playlists personnalisées.
+        </p>
+
+        <div class="project-cta">
+            <a href="" target="_blank" rel="noopener" class="btn-primary">
+                Voir le projet
+            </a>
+
+            <a href="https://github.com/alvin-crn/ListenMyMood" target="_blank" rel="noopener" class="btn-secondary">
+                Code source
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Contexte du projet</h2>
+
+    <p>
+        Listen My Mood est un projet personnel visant à explorer l’utilisation d’API externes
+        dans une application web moderne. L’objectif était de proposer une expérience simple
+        permettant à un utilisateur de découvrir de nouvelles musiques en fonction de son état d’esprit.
+    </p>
+</section>
+
+<!-- OBJECTIFS -->
+<section class="project-section">
+    <h2>Objectifs</h2>
+
+    <ul>
+        <li>Permettre à l’utilisateur de sélectionner son humeur</li>
+        <li>Interroger l’API Spotify pour récupérer des recommandations adaptées</li>
+        <li>Générer une liste de playlists liée à l’humeur sélectionnée</li>
+        <li>Offrir une interface simple, rapide et intuitive</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-spotify"></i> API Spotify</span>
+        <span><i class="fa-brands fa-symfony"></i> Symfony 7</span>
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-brands fa-js"></i> JQuery</span>
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-symfony"></i> Twig</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+    </div>
+</section>
+
+<section class="project-section highlight">
+    <h2>Mon rôle</h2>
+
+    <ul>
+        <li>Conception de l’architecture back-end Symfony</li>
+        <li>Intégration et sécurisation de l’API Spotify (OAuth)</li>
+        <li>Développement de l’interface utilisateur</li>
+        <li>Gestion des requêtes AJAX avec JQuery</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Fonctionnalités principales</h2>
+
+    <ul>
+        <li>Sélection de l’humeur via une interface dédiée</li>
+        <li>Récupération dynamique de recommandations musicales</li>
+        <li>Affichage des titres, artistes et albums</li>
+        <li>Redirection vers Spotify pour l’écoute</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Ce que m’a apporté ce projet</h2>
+
+    <p>
+        Ce projet m’a permis de renforcer mes compétences en intégration d’API externes,
+        en gestion de flux de données et en conception d’interfaces orientées expérience utilisateur.
+        Il m’a également permis d’approfondir la sécurisation des échanges via OAuth
+        et la manipulation de données complexes côté back-end.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>Aperçu</h2>
+
+    <div class="project-gallery">
+        <p>À venir...</p>
+        {# <img src="{{ asset('media/projects/brodart-1.jpg') }}">
+        <img src="{{ asset('media/projects/brodart-2.jpg') }}">
+        <img src="{{ asset('media/projects/brodart-3.jpg') }}"> #}
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

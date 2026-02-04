@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+{% block title %}
+    Alvin Carneiro - Brod'Art
+{% endblock title %}
+
+{% block body %}
+<section class="project-hero">
+    <img src="{{ asset('media/carrousel/BrodArt-cover.jpg') }}" alt="Brod'Art">
+
+    <div class="project-hero-content">
+        <h1>Brod'Art</h1>
+        <p class="project-subtitle">
+            Plateforme e-commerce dédiée à la vente de vêtements et accessoires brodés personnalisés.
+        </p>
+
+        <div class="project-cta">
+            <a href="" target="_blank" rel="noopener" class="btn-primary">
+                Voir le site
+            </a>
+            <a href="https://github.com/alvin-crn/BrodArt" target="_blank" rel="noopener" class="btn-secondary">
+                Code source
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Contexte & objectifs</h2>
+    <p>
+        Brod'Art est né du besoin de proposer une solution e-commerce simple et flexible
+        pour la vente de produits textiles personnalisés avec de la broderie.
+    </p>
+
+    <ul>
+        <li>Gestion complète du catalogue produits</li>
+        <li>Personnalisation des articles</li>
+        <li>Gestion des commandes et des stocks</li>
+        <li>Interface d’administration dédiée</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Stack technique</h2>
+
+    <div class="tech-tags">
+        <span><i class="fa-brands fa-symfony"></i> Symfony 7</span>
+        <span><i class="fa-brands fa-php"></i> PHP</span>
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <span><i class="fa-brands fa-js"></i> jQuery</span>
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-symfony"></i> Twig</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2>Fonctionnalités principales</h2>
+
+    <ul class="features-list">
+        <li>Authentification et gestion des utilisateurs</li>
+        <li>Gestion dynamique des produits, tailles et stocks</li>
+        <li>Passage de commandes en ligne</li>
+        <li>Suivi des commandes et des statuts</li>
+        <li>Dashboard administrateur</li>
+        <li>Dashboard utilisateur</li>
+    </ul>
+</section>
+
+<section class="project-section highlight">
+    <h2>Mon rôle & apprentissages</h2>
+
+    <p>
+        J’ai conçu la cahier des charges et développé l’ensemble de l’application, de l’architecture backend
+        à l’interface utilisateur.
+    </p>
+
+    <ul>
+        <li>Mise en place d’une architecture Symfony maintenable</li>
+        <li>Gestion avancée des relations Doctrine</li>
+        <li>Optimisation des formulaires complexes</li>
+        <li>Amélioration de l’UX et de la performance</li>
+        <li>Tests unitaires et fonctionnels</li>
+        <li>Documentation technique et utilisateur</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>Aperçu</h2>
+
+    <div class="project-gallery">
+        <p>À venir...</p>
+{#         <img src="{{ asset('media/projects/brodart-1.jpg') }}">
+        <img src="{{ asset('media/projects/brodart-2.jpg') }}">
+        <img src="{{ asset('media/projects/brodart-3.jpg') }}"> #}
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+{% endblock js %}

@@ -17,6 +17,6 @@ final class HomeController extends AbstractController
     #[Route('/{project}', name: 'project_show')]
     public function showProject(string $project): Response
     {
-        return $this->render('home/' . $project . '.html.twig');
+        return $this->render('project/' . $project . '.html.twig');
     }
 }
