@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600");
-@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 
+/* Reset CSS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +10,7 @@
 
 html,
 body {
-  font-family: "Encode Sans Condensed", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #f9f9f9;
 }
 
