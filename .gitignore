@@ -9,3 +9,5 @@
 /node_modules
 /package-lock.json
 ###< symfony/framework-bundle ###
+public/.DS_Store
+.DS_Store

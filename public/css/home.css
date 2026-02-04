@@ -1,6 +1,5 @@
 /* ======== About Me Styles ======== */
 .about-section {
-  font-family: "TASA Orbiter", sans-serif;
   height: calc(100vh - 60px);
   margin-top: 60px;
   display: flex;
@@ -22,7 +21,7 @@
 
 .about-text h1 {
   font-size: 3rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .about-text h1 span {
@@ -43,7 +42,7 @@
   font-size: 1.3rem;
   margin-bottom: 2.5rem;
   color: #8e8e8e;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .about-text h3 {
@@ -52,9 +51,13 @@
   font-weight: bold;
 }
 
+.about-text a i {
+  margin-left: 8px;
+}
+
 .about-description {
   color: #555;
-  font-weight: lighter;
+  font-weight: 300;
   margin-bottom: 30px;
 }
 
@@ -65,14 +68,15 @@
   color: white;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
   box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
   transition: all 0.3s ease;
 }
 
 .about-text .about-cta:hover {
   transform: translateY(-3px);
-  background: #4338ca; /* un poil plus foncé */
+  background: #4338ca;
+  /* un poil plus foncé */
   box-shadow: 0 12px 30px rgba(79, 70, 229, 0.45);
 }
 
@@ -101,6 +105,31 @@
     flex-direction: column-reverse;
     text-align: center;
     gap: 2rem;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .about-text h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text .about-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .about-photo img {
@@ -174,12 +203,14 @@
 
 .slide-overlay h1 {
   font-size: 3rem;
+  font-weight: 500;
+  text-wrap-mode: nowrap;
 }
 
 .slide-overlay h2 {
   font-size: 1.2rem;
   margin: 10px 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .tech-tags {
