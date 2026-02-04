@@ -640,7 +640,7 @@
 
 .education-detail.open {
   padding: 15px 20px;
-  max-height: 200px;
+  max-height: 700px;
 }
 
 .education-detail .mention {
@@ -700,5 +700,95 @@
   .education-info .school,
   .education-info .date {
     font-size: 0.8rem;
+  }
+}
+
+/* ======== Contact Section ======== */
+.contact-section {
+  padding: 0 10% 100px 10%;
+  background: #f9f9f9;
+  color: #111827;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4f46e5;
+}
+
+.contact-card span {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+
+.contact-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.contact-cv:hover {
+  background: #3730a3;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.3);
+}
+
+/* Responsive mobile */
+@media (max-width: 640px) {
+  .contact-cards {
+    flex-direction: column;
+    gap: 15px;
   }
 }
