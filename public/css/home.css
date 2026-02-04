@@ -260,3 +260,70 @@
 .carousel-arrow.right {
   right: 20px;
 }
+
+@media (max-width: 768px) {
+  #projects-carousel {
+    height: 80vh;
+  }
+
+  .slide-overlay {
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 90%;
+    align-items: center;
+  }
+
+  .slide-overlay h1 {
+    font-size: 2.2rem;
+    text-wrap: balance;
+  }
+
+  .slide-overlay h2 {
+    font-size: 1rem;
+  }
+
+  .carousel-arrow {
+    font-size: 2.2rem;
+    padding: 12px;
+  }
+
+  .carousel-arrow.left {
+    left: 8px;
+  }
+
+  .carousel-arrow.right {
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects-carousel {
+    height: 70vh;
+  }
+
+  .slide-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .slide-overlay h2 {
+    font-size: 0.95rem;
+  }
+
+  .tech-tags span {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    backdrop-filter: none;
+  }
+
+  .carousel-slide img {
+    filter: brightness(0.65);
+  }
+}
+
+@media (hover: none) {
+  .carousel-slide:hover img {
+    transform: none;
+  }
+}
