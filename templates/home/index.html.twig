@@ -288,13 +288,100 @@
                 <span>Gestion de projet agile</span>
                 <span>Documentation technique</span>
                 <span>Proof of Concept (POC)</span>
+                <span>Automatisation</span>
+                <span>RPA</span>
             </div>
         </div>
 
+    </div>
+</section>
+
+<section id="experience" class="experience-section">
+    <div class="experience-container">
+
+        <h2 class="section-title">Expériences professionnelles</h2>
+
+        <div class="experience-list">
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <img src="{{ asset('media/minarm.jpg') }}" alt="MinArm" class="experience-logo">
+                    <div class="experience-info">
+                        <h3>Développeur Full Stack / Chef de projet IT</h3>
+                        <p class="company">Ministère des Armées</p>
+                        <p class="date">Sept. 2022 - Sept. 2025</p>
+                    </div>
+                    <button class="experience-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="experience-detail">
+                    <span class="location">Vélizy-Villacoublay (Île-De-France)</span>
+                    <ul>
+                        <li>Développement et maintenance d’applications web, desktop et mobiles pour répondre aux
+                            besoins internes.</li>
+                        <li>Conception d’outils d’automatisation réduisant significativement les tâches manuelles et les
+                            erreurs de saisie.</li>
+                        <li>Réalisation d’un POC d’application mobile pour un porte-carte dématérialisé.</li>
+                        <li>Conduite de projets digitaux en autonomie : rédaction de documentation technique et
+                            fonctionnelle, suivi des plannings, coordination avec les différentes parties prenantes.
+                        </li>
+                        <li>Analyse des capacités de l’entreprise.</li>
+                    </ul>
+                    <h3>Compétences acquises ou améliorés lors de ce poste</h3>
+                    <div class="experience-tags">
+                        <span>PHP</span>
+                        <span>Symfony</span>
+                        <span>JavaScript</span>
+                        <span>JQuery</span>
+                        <span>Macro Excel / VBA</span>
+                        <span>React Native</span>
+                        <span>Java</span>
+                        <span>GraphQL</span>
+                        <span>Gestion de projet</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <img src="{{ asset('media/BrodArt.png') }}" alt="BrodArt" class="experience-logo">
+                    <div class="experience-info">
+                        <h3>Développeur Web Full Stack</h3>
+                        <p class="company">Brod’Art (auto-entrepreneur)</p>
+                        <p class="date">Avr. 2022 - Mai. 2022</p>
+                    </div>
+                    <button class="experience-toggle">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="experience-detail">
+                    <span class="location">Lyon (69)</span>
+                    <ul>
+                        <li>Participation à la définition du cahier des charges et à la conception des maquettes
+                            fonctionnelles</li>
+                        <li>Développement full-stack d’une application web et web mobile (front-end & back-end) en
+                            Symfony/Twig.</li>
+                        <li>Intégration d’une solution e-commerce et création d’une interface utilisateur adaptée.</li>
+                        <li>Conception de la base de données et développement des composants d’accès aux données.</li>
+                    </ul>
+                    <h3>Compétences acquises ou améliorés lors de ce poste</h3>
+                    <div class="experience-tags">
+                        <span>PHP</span>
+                        <span>Symfony</span>
+                        <span>JavaScript</span>
+                        <span>JQuery</span>
+                        <span>MySql</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 {% endblock %}
 
 {% block js %}
 <script src="{{ asset('js/carrousel.js') }}"></script>
+<script src="{{ asset('js/experience.js') }}"></script>
 {% endblock js %}
