@@ -3,8 +3,9 @@
 {% block css %}
 <link rel="stylesheet" href="{{ asset('css/project.css') }}">
 {% endblock %}
+
 {% block title %}
-    Alvin Carneiro - Brod'Art
+Alvin Carneiro - Brod'Art
 {% endblock title %}
 
 {% block body %}
@@ -92,10 +93,9 @@
     <h2>Aperçu</h2>
 
     <div class="project-gallery">
-        <p>À venir...</p>
-{#         <img src="{{ asset('media/projects/brodart-1.jpg') }}">
-        <img src="{{ asset('media/projects/brodart-2.jpg') }}">
-        <img src="{{ asset('media/projects/brodart-3.jpg') }}"> #}
+        <a href="{{ asset('media/preview/brodart-1.png') }}" target="_blank" rel="noopener"><img src="{{ asset('media/preview/brodart-1.png') }}"></a>
+        <a href="{{ asset('media/preview/brodart-2.png') }}" target="_blank" rel="noopener"><img src="{{ asset('media/preview/brodart-2.png') }}"></a>
+        <a href="{{ asset('media/preview/brodart-3.png') }}" target="_blank" rel="noopener"><img src="{{ asset('media/preview/brodart-3.png') }}"></a>
     </div>
 </section>
 {% endblock %}
